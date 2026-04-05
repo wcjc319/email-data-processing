@@ -1,4 +1,19 @@
-# email-data-processing
-专业的 Enron 邮件数据集处理工具，一键识别数据集，输出为.docx
-# Solving the problem of Enron datasets having no file extension
-首先需要我们下载来数据集压缩包一般扩展名为.tar.gz,然后我们用7-zip层层解压缩这个压缩包，同时我们需要验证解压之后的文件是否有破损，需要把该文件拉入txt中测试是否有内容，证明并没有损坏。最后运行我们的程序就能够一键输出为.docx
+# Enron 邮件处理工具
+
+一个基于 Tkinter 的 GUI 工具，用于解析 Enron 邮件数据集，提取邮件内容并导出为 Word 文档。
+
+## 功能
+- 扫描 Enron 数据集目录，筛选有效邮件文件
+- 提取发件人、收件人、主题及纯文本内容（修复编码问题）
+- 导出为 Word 文档（.docx）
+- 实时显示处理进度和日志
+
+## 依赖
+- Python 3.x
+- python-docx（自动安装）
+
+## 使用方法
+1. 运行 `fix_data.py`
+2. 选择 Enron 数据集根目录
+3. 选择输出 Word 文档路径
+4. 点击“开始处理”
